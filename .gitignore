@@ -1,0 +1,7 @@
+# Environment files — API keys 
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db

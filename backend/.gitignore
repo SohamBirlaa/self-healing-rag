@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# ChromaDB — local DB hai, commit nahi karni
+chroma_db/
+
+# Logs
+logs/
+
+# Uploaded files
+data/
+
+# Python cache
+*.egg-info/
+dist/
+build/
+
+# Test cache
+.pytest_cache/
