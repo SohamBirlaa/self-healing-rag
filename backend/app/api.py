@@ -36,7 +36,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],        # production mein ["http://localhost:3000"] karo
+    #allow_origins=["*"],        # production mein ["http://localhost:3000"] karo
+    allow_origins=[
+        "https://self-healing-rag.up.railway.app",
+        "https://skillful-patience-production.up.railway.app",
+        "*"  # development ke liye
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
