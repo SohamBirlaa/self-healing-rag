@@ -1,42 +1,15 @@
-# # Core
-# langgraph>=0.2.0
-# langchain>=0.3.0
-# langchain-community>=0.3.0
-# langchain-ollama>=0.2.0
-
-# # Vector DB & Embeddings
-# chromadb>=0.5.0
-# sentence-transformers>=3.0.0
-
-# # Cross-encoder reranking
-# FlagEmbedding>=1.2.0
-
-# # API
-# fastapi>=0.115.0
-# uvicorn>=0.30.0
-# pydantic>=2.0.0
-
-# # Ingestion
-# pypdf>=4.0.0
-# python-docx>=1.0.0
-# docx2txt>=0.8
-
-# # Evaluation & Testing
-# pytest>=8.0.0
-
-# python-multipart>=0.0.9
-
-# langchain-groq>=0.1.0
-# huggingface-hub>=0.23.0
-
-# for deploment as free tier hit limit
 # Core
 langgraph>=0.2.0
 langchain>=0.3.0
 langchain-community>=0.3.0
+langchain-ollama>=0.2.0
 
-# Vector DB
+# Vector DB & Embeddings
 chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Cross-encoder reranking
+FlagEmbedding>=1.2.0
 
 # API
 fastapi>=0.115.0
@@ -46,14 +19,12 @@ pydantic>=2.0.0
 # Ingestion
 pypdf>=4.0.0
 python-docx>=1.0.0
-langchain-groq>=0.1.0
-huggingface-hub>=0.23.0
-python-multipart>=0.0.9
-python-dotenv>=1.0.0
+docx2txt>=0.8
 
-# Testing
+# Evaluation & Testing
 pytest>=8.0.0
 
-#  Yeh hatao — bahut heavy hain
-# sentence-transformers>=3.0.0
-# FlagEmbedding>=1.2.0
+python-multipart>=0.0.9
+
+langchain-groq>=0.1.0
+huggingface-hub>=0.23.0
