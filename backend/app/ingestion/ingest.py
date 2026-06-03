@@ -208,7 +208,11 @@ def ingest():
 
     # HuggingFace API client — BGE-M3 embeddings
     logger.info("[INGEST] Connecting to HuggingFace API (BGE-M3)...")
-    hf_client = InferenceClient(token=os.environ.get("HF_TOKEN"))
+    #hf_client = InferenceClient(token=os.environ.get("HF_TOKEN"))
+    hf_client = InferenceClient(
+        token=os.environ.get("HF_TOKEN"),
+        provider="hf-inference"
+    )
 
     # Connect to ChromaDB
     client     = chromadb.PersistentClient(path=CHROMA_DIR)

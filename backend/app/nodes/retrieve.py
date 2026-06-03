@@ -124,7 +124,8 @@ def _get_hf_client():
     if _hf_client is None:
         logger.info("Connecting to HuggingFace Inference API...")
         _hf_client = InferenceClient(
-            token=os.environ.get("HF_TOKEN")
+            token=os.environ.get("HF_TOKEN"),
+            provider="hf-inference"
         )
     return _hf_client
 
